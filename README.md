@@ -35,3 +35,6 @@ Network zones include:
 - SOC monitoring network
 
 Example architecture:
+## Architecture
+
+![SOC Lab Architecture](architecture/architecture.png)
