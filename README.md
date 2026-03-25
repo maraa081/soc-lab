@@ -126,13 +126,3 @@ soc-lab/
  Active — updated regularly as new scenarios are added.
 
 ---
-
-## Author
-
-Cybersecurity engineering student  
-Focus : SOC Analysis / Blue Team / Detection Engineering  
-Objective : International career (USA / Japan)
-```
-
----
-
