@@ -48,11 +48,11 @@ hydra -l vboxuser -P /usr/share/wordlists/rockyou.txt ssh://192.168.63.109 -t 4
 
 **Screenshot – Hydra attack launched from Kali :**
 
-![Hydra attack](screenshots/02-hydra-attack.png)
+![Hydra attack](Screenshots/02-hydra-attack.png)
 
 **Screenshot – Successful SSH login on Ubuntu1 :**
 
-![SSH success](screenshots/01-ssh-login-success.png)
+![SSH success](Screenshots/01-ssh-login-success.png)
 
 ---
 
@@ -62,7 +62,7 @@ hydra -l vboxuser -P /usr/share/wordlists/rockyou.txt ssh://192.168.63.109 -t 4
 
 The Wazuh agent on Ubuntu1 was active throughout the attack, ensuring continuous log forwarding.
 
-![Wazuh endpoints](screenshots/04-wazuh-endpoints.png)
+![Wazuh endpoints](Screenshots/04-wazuh-endpoints.png)
 
 ---
 
@@ -74,7 +74,7 @@ The Wazuh overview dashboard shows the alert volume generated during the attack 
 - **Medium severity** : 2,589 alerts (rule level 7–11)
 - **Low severity** : 5,827 alerts (rule level 0–6)
 
-![Wazuh overview](screenshots/03-wazuh-overview.png)
+![Wazuh overview](Screenshots/03-wazuh-overview.png)
 
 ---
 
@@ -84,7 +84,7 @@ The MITRE ATT&CK events view shows **211 hits** detected between `11:00:00` and 
 
 The alert volume clearly increases over time, matching the sustained brute force activity from Hydra.
 
-![MITRE alerts timeline](screenshots/06-wazuh-mitre-alerts.png)
+![MITRE alerts timeline](Screenshots/06-wazuh-mitre-alerts.png)
 
 ---
 
@@ -112,7 +112,7 @@ At `11:00:39`, the brute force succeeded. Wazuh immediately generated two events
 
 > This is critical : the successful login after hundreds of failures is a clear brute force indicator. A SOC analyst would correlate rule 5715 appearing right after a burst of rule 5760 to confirm the attack was successful.
 
-![MITRE successful login](screenshots/05-wazuh-mitre-start.png)
+![MITRE successful login](Screenshots/05-wazuh-mitre-start.png)
 
 ---
 
