@@ -63,7 +63,8 @@ Custom Wazuh rules written for this lab :
 |------|-------------|---------|
 |  Planned | Alert on brute force success (>50 failures + login from same IP) | SSH Brute Force |
 
-Full detection rules : [detections/](detections/)  
+Full detection rules : [detections/wazuh-rules/](detections/wazuh-rules/)  
+Sigma rules : [detections/sigma/](detections/sigma/)  
 MITRE mapping : [detections/mitre-mapping/](detections/mitre-mapping/)
 
 ---
@@ -93,17 +94,36 @@ Improve detection rules
 ## Repository Structure
 
 ```
-soc-lab/
-├── architecture/          # Network diagrams and IP plan
-├── attack-scenarios/      # Attack simulations with detection reports
+soc-lab-main/
+├── architecture/              # Network diagrams and IP plan
+├── attack-scenarios/          # Attack simulations with detection reports
 │   ├── ssh-bruteforce/
 │   ├── web-attack/
 │   ├── lateral-movement/
 │   └── persistence/
-├── detections/            # Custom Wazuh rules and MITRE mapping
-│   └── mitre-mapping/
-├── wazuh/                 # Wazuh configuration and custom rules
-└── README.md
+├── detections/                # Detection rules and MITRE mapping
+│   ├── mitre-mapping/
+│   ├── sigma/
+│   └── wazuh-rules/
+├── docs/                      # Lab notes, roadmap, use cases
+│   ├── lab-notes.md
+│   ├── roadmap.md
+│   └── use-cases.md
+├── ids/                       # IDS configuration
+│   ├── suricata/
+│   └── zeek/
+├── infrastructure/            # Automation and provisioning
+│   ├── ansible/
+│   ├── inventories/
+│   └── setup-scripts/
+├── reports/                   # Investigation reports
+│   ├── detection-validation/
+│   └── incident-analysis/
+└── wazuh/                     # Wazuh configuration and custom rules
+    ├── active-response/
+    ├── agent-deployment/
+    ├── config/
+    └── custom-rules/
 ```
 
 ---
@@ -123,6 +143,10 @@ soc-lab/
 
 ## Project Status
 
- Active — updated regularly as new scenarios are added.
+Active — updated regularly as new scenarios are added.
 
 ---
+
+## Focus : SOC Analysis / Blue Team / Detection Engineering  
+Objective : International career (USA / Japan)
+```
