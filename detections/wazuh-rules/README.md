@@ -31,7 +31,7 @@ Rule levels in Wazuh go from 0 to 15 :
 **Goal** : detect a successful SSH login from an IP that previously triggered brute force alerts.  
 **Status** : In development
 
-```xml
+
 <group name="custom,ssh,bruteforce">
   <rule id="100001" level="12" frequency="5" timeframe="120">
     <if_matched_sid>5760</if_matched_sid>
@@ -44,8 +44,8 @@ Rule levels in Wazuh go from 0 to 15 :
     <group>authentication_success,attack</group>
   </rule>
 </group>
-
-Where to deploy : /var/ossec/etc/rules/local_rules.xml
+---
+### Where to deploy : /var/ossec/etc/rules/local_rules.xml
 
 How Rules Work in Wazuh
 Log collected by agent
