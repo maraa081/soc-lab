@@ -44,3 +44,18 @@ Rule levels in Wazuh go from 0 to 15 :
     <group>authentication_success,attack</group>
   </rule>
 </group>
+
+Where to deploy : /var/ossec/etc/rules/local_rules.xml
+
+How Rules Work in Wazuh
+Log collected by agent
+        ↓
+Sent to Wazuh Manager
+        ↓
+Decoded (decoders extract fields)
+        ↓
+Matched against rules
+        ↓
+Alert generated if rule fires
+        ↓
+Alert visible in Wazuh Dashboard
