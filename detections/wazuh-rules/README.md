@@ -1,4 +1,3 @@
-```markdown
 # Wazuh Detection Rules
 
 This document covers the Wazuh rules used and written for this lab.  
