@@ -131,9 +131,9 @@ At `11:00:39`, the brute force succeeded. Wazuh immediately generated two events
 
 | What happened | Was it detected ? | Rule(s) triggered |
 |--------------|------------------|-------------------|
-| Individual failed SSH logins | ✅ Yes | 5760 |
-| Repeated failures (brute force pattern) | ✅ Yes | 2502, 5758 |
-| Successful login after brute force | ✅ Yes | 5715, 5501 |
+| Individual failed SSH logins |  Yes | 5760 |
+| Repeated failures (brute force pattern) |  Yes | 2502, 5758 |
+| Successful login after brute force |  Yes | 5715, 5501 |
 
 **All phases of the attack were successfully detected by Wazuh.**
 
