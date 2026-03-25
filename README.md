@@ -147,6 +147,3 @@ Active — updated regularly as new scenarios are added.
 
 ---
 
-## Focus : SOC Analysis / Blue Team / Detection Engineering  
-Objective : International career (USA / Japan)
-```
