@@ -66,5 +66,5 @@ Each phase builds on the previous one to simulate a realistic SOC environment.
 -  Integrate Zeek
 -  Improve detection coverage
 -  Build incident response playbooks
-- [ ] Cover all major MITRE ATT&CK tactics with at least one scenario
-- [ ] Explore Wazuh active response (auto-block attacking IP)
+-  Cover all major MITRE ATT&CK tactics with at least one scenario
+-  Explore Wazuh active response (auto-block attacking IP)
