@@ -148,9 +148,4 @@ At `11:00:39`, the brute force succeeded. Wazuh immediately generated two events
 
 ---
 
-## Next Steps
 
-- [ ] Create a custom Wazuh rule to trigger a High severity alert when >50 failures are followed by a success from the same IP
-- [ ] Implement Wazuh active response to auto-block the attacker IP
-- [ ] Test the same scenario with fail2ban enabled to compare detection
-```
